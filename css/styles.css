@@ -59,6 +59,18 @@ header {
   background-position: center center;
   color: white;
   text-align: end;
+  animation: kenburns-bottom-right 3s ease-out both;
+}
+
+@keyframes kenburns-bottom-right {
+  0% {
+    transform: scale(1);
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: scale(1.05);
+    transform-origin: right bottom;
+  }
 }
 
 .overlay {
@@ -72,13 +84,32 @@ header {
 
 .header-content {
   z-index: 1;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 
 /* SECTION ORADORES */
 
 .card {
   width: 15rem;
   height: 28rem;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  transform: scale(1.005);
 }
 
 .card-img-top {
@@ -127,6 +158,14 @@ header {
 }
 
 /* SECTION LOCACION */
+
+.locacion-img {
+  transition: all .3s ease-in-out
+}
+
+.locacion-img:hover {
+  transform: scale(1.01);
+}
 
 .location-content {
   color: white;
