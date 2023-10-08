@@ -75,6 +75,12 @@ header {
   z-index: 1;
 }
 
+/* SECTION ORADORES */
+
+.card {
+  width: 15rem;
+}
+
 /* FOOTER */
 
 footer {
