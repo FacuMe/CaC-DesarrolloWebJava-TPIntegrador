@@ -4,12 +4,11 @@
 
    .................................
 */
+
 /*RESET HTML, BOOTSTRAP STYLES*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Itim", cursive;
-  font-display: swap;
 }
 
 body {
@@ -79,6 +78,89 @@ header {
 
 .card {
   width: 15rem;
+  height: 28rem;
+}
+
+.card-img-top {
+  height: 15rem;
+}
+
+.card-item {
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.bg-yellow {
+  background-color: #ffcb1f;
+}
+
+.bg-green {
+  background-color: #21b09b;
+  color:white;
+}
+
+.bg-grey {
+  background-color: #727272;
+  color:white;
+}
+
+.bg-red {
+  background-color: #d52828;
+  color:white;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 960px) {
+  .card {
+    width: 20rem;
+    height: 31rem;
+  }
+
+  .card-img-top {
+    height: 19.5rem;
+  }
+}
+
+/* SECTION LOCACION */
+
+.location-content {
+  color: white;
+  background-color: #363c41;
+  border-left: 2px solid white;
+}
+
+.location-description {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* SECTION POSTULACION */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.small-letter {
+  font-size: 12px;
+}
+
+.submit {
+  background-color: #8fd211;
+  border-color: #8fd211;
+}
+
+.submit:hover {
+  background-color: #6da10d;
+  border-color: #6da10d;
+}
+
+.textarea-description {
+  font-size: 12px;
 }
 
 /* FOOTER */

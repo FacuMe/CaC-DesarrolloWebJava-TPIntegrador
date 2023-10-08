@@ -38,14 +38,14 @@
         <div class="container-fluid justify-content-between align-items-center">
             <div class="col-md-4 offset-md-1">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/codoacodo.png" alt="Logo" width="55" height="40" class="d-inline-block align-text-center">
+                    <img src="./img/codoacodo.png" alt="Logo" width="75" height="50" class="d-inline-block align-text-center">
                     Conf Bs As
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
@@ -70,45 +70,90 @@
         <section id="oradores" class="container-fluid mt-3 mb-5">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <p>Conoce a los</p>
-                    <h2>Oradores</h2>
+                    <p class="uppercase small-letter">Conoce a los</p>
+                    <h3 class="uppercase">Oradores</h3>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col-12 d-flex flex-wrap justify-content-center align-items-center gap-5">
+                    <div class="card">
+                        <img src="./img/steve.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
+                        <div class="card-body">
+                            <div class="d-flex align-items-end gap-1">
+                                <p class="card-item bg-yellow">JavaScript</p>
+                                <p class="card-item bg-green">React</p>
+                            </div>
+                            <h5 class="card-title">Steve Jobs</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/bill.jpg" class="card-img-top img-fluid" alt="Bill Gates">
+                        <div class="card-body">
+                            <div class="d-flex align-items-end gap-1">
+                                <p class="card-item bg-yellow">JavaScript</p>
+                                <p class="card-item bg-green">React</p>
+                            </div>
+                            <h5 class="card-title">Bill Gates</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/ada.jpeg" class="card-img-top img-fluid" alt="Ada Lovelace">
+                        <div class="card-body">
+                            <div class="d-flex align-items-end gap-1">
+                                <p class="card-item bg-grey">Negocios</p>
+                                <p class="card-item bg-red">Startups</p>
+                            </div>
+                            <h5 class="card-title">Ada Lovelace</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="locacion" class="container-fluid">
             <div class="row">
-                <div class="col-10 offset-1 d-flex flex-wrap justify-content-center align-items-center gap-5">
-                    <div class="card">
-                        <img src="./img/steve.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
-                        <div class="d-flex">
-                            <p class="card-item">JavaScript</p>
-                            <p class="card-item">React</p>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Steve Jobs</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
-                        </div>
+                <div class="col-md-6 ps-0 pe-0">
+                    <img src="./img/honolulu.jpg" class="img-fluid" alt="Honolulu">
+                </div>
+                <div class="col-md-6 ms-0 location-content p-4 p-sm-3">
+                    <h5 class="location-title">Bs As - Octubre</h5>
+                    <p class="location-description mt-3 mb-3">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. 
+                        Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en 
+                        la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad 
+                        (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                    <button type="button" class="btn btn-outline-light">Conocé más</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="postulacion" class="container-fluid mt-4 mb-4">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <p class="uppercase small-letter">Conviértete en un</p>
+                    <h3 class="uppercase">Orador</h3>
+                </div>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-10 d-flex justify-content-center">
+                        <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
                     </div>
-                    <div class="card">
-                        <img src="./img/steve.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
-                        <div class="d-flex">
-                            <p class="card-item">JavaScript</p>
-                            <p class="card-item">React</p>
+                    <form class="col-10 col-lg-6 mt-3" action="." method="POST">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control form-control-sm" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control form-control-sm" placeholder="Apellido">
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Steve Jobs</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                        <div class="mb-3 d-flex flex-column gap-2">
+                            <textarea class="form-control" placeholder="Sobre qué quieres hablar?" rows="4"></textarea>
+                            <p class="textarea-description">Recuerda incluir un título para tu charla</p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="./img/steve.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
-                        <div class="d-flex">
-                            <p class="card-item">JavaScript</p>
-                            <p class="card-item">React</p>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Steve Jobs</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
-                        </div>
-                    </div>
+                        <button type="submit" class="btn btn-secondary w-100 submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -117,7 +162,7 @@
     <!-- footer -->
     <footer class="container-fluid">
         <div class="row">
-            <ul class="col-12 d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center gap-5">
+            <ul class="col-12 d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center gap-2 gap-md-5">
                 <li class="col-md-1"><a href="#">Preguntas frecuentes</a></li>
                 <li class="col-md-1"><a href="#">Contáctanos</a></li>
                 <li class="col-md-1"><a href="#">Prensa</a></li>
