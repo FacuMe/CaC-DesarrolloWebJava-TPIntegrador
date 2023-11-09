@@ -51,7 +51,8 @@ body footer {
 
 
 /* HEADER */
-header {
+
+.index-header {
   position: relative;
   height: 92vh;
   background-image: url("../img/hawaii.jpg");
@@ -202,6 +203,42 @@ header {
   font-size: 12px;
 }
 
+/* TICKETS SECTION */
+.border-blue {
+  border: 1px solid blue;
+}
+
+.border-green {
+  border: 1px solid rgb(31, 175, 156);
+}
+
+.border-yellow {
+  border: 1px solid rgb(230, 211, 7);
+}
+
+.blue-box {
+  border: 0.5px solid #8cabd0;
+  background-color: #c2dbf5;
+  border-radius: 5px;
+  color: #184473;
+}
+
+.resume, .reset {
+  background-color: #8fd211;
+  border-color: #8fd211;
+}
+
+.resume:hover, .reset:hover {
+  background-color: #6da10d;
+  border-color: #6da10d;
+}
+
+@media screen and (min-width: 992px) {
+  .ticket-cards {
+    justify-content: space-between !important;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -224,3 +261,4 @@ footer a:hover {
   text-decoration: none;
   color: #328f52;
 }
+
