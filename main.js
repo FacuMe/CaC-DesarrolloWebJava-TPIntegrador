@@ -142,7 +142,7 @@ class Compra{
         document.getElementById("apellido").value = this.apellido;
         document.getElementById("correo").value = this.correo;
         document.getElementById("categoria-seleccionada").value = this.categoriaSeleccionada;
-        document.getElementById("total-compra").innerHTML = `$ ${this.total}`;
+        document.getElementById("total-compra").innerHTML = `${this.total}`;
     }
 
     validarCampos() {
@@ -161,7 +161,7 @@ class Compra{
                 this.cargarDatosCompra();
                 this.guardarEnStorage();
                 const totalCompra = document.getElementById("total-compra");
-                totalCompra.innerHTML = `$ ${this.total}`;
+                totalCompra.innerHTML = `$${this.total}`;
             } else {
                 alert("Por favor, complete todos los campos requeridos.");
             }
